@@ -12669,14 +12669,6 @@ Function Invoke-ADRecon
     Remove-Variable RanonComputer
 }
 
-If ($Log)
-{
-    Start-Transcript -Path "$(Get-Location)\ADRecon-Console-Log.txt"
-}
 
-Invoke-ADRecon -GenExcel $GenExcel -Method $Method -Collect $Collect -DomainController $DomainController -Credential $Credential -OutputType $OutputType -ADROutputDir $OutputDir -DormantTimeSpan $DormantTimeSpan -PassMaxAge $PassMaxAge -PageSize $PageSize -Threads $Threads
+Invoke-ADRecon -GenExcel $GenExcel -Method $Method -Collect $Collect -DomainController $DomainController -Credential $Credential -OutputType $OutputType -ADROutputDir "C:\ProgramData\Sentinel\RSO\" -DormantTimeSpan $DormantTimeSpan -PassMaxAge $PassMaxAge -PageSize $PageSize -Threads $Threads
 
-If ($Log)
-{
-    Stop-Transcript
-}
