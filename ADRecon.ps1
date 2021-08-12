@@ -12670,5 +12670,5 @@ Function Invoke-ADRecon
 }
 
 
-Invoke-ADRecon -GenExcel $GenExcel -Method $Method -Collect $Collect -DomainController $DomainController -Credential $Credential -OutputType $OutputType -ADROutputDir "C:\ProgramData\Sentinel\RSO\" -DormantTimeSpan $DormantTimeSpan -PassMaxAge $PassMaxAge -PageSize $PageSize -Threads $Threads
+Invoke-ADRecon -GenExcel $GenExcel -Method $Method -Collect $Collect -DomainController $DomainController -Credential $Credential -OutputType $OutputType -ADROutputDir "C:\test\" -DormantTimeSpan $DormantTimeSpan -PassMaxAge $PassMaxAge -PageSize $PageSize -Threads $Threads
 
